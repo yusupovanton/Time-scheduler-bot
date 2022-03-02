@@ -126,7 +126,7 @@ class Gif:
             draw.ellipse((center - i, center - i, center + i, center + i), fill=color_2)
             images.append(im)
 
-            center += 1
+            center = random.randint(0, 100)
 
             draw.text((center + 1, center + 1), self.text, get_random_color(), font=font)
             draw.text((center + 0.5, center + 0.5), self.text, get_random_color(), font=font)
@@ -139,7 +139,7 @@ class Gif:
             draw.ellipse((center - i, center - i, center + i, center + i), fill=color_1)
             images.append(im)
 
-            center += 1
+            center = random.randint(0, 100)
 
             draw.text((center + 1, center + 1), self.text, get_random_color(), font=font)
             draw.text((center + 0.5, center + 0.5), self.text, get_random_color(), font=font)
@@ -174,7 +174,7 @@ class Gif:
                     size = random.randint(12, 25)
                     icon = icon.resize((size, size), Image.ANTIALIAS)
                     im.paste(icon, (x, y), mask=icon)
-
+            center = random.randint(0, 100)
             draw.text((center - 0.5*i, center - 0.5*i), self.text, get_random_color(), font=font)
             draw.text((center - 1*i, center - 1*i), self.text, get_random_color(), font=font)
 
@@ -197,7 +197,7 @@ class Gif:
                     size = random.randint(12, 25)
                     icon = icon.resize((size, size), Image.ANTIALIAS)
                     im.paste(icon, (x, y), mask=icon)
-
+            center = random.randint(0, 100)
             draw.text((center, center), self.text, get_random_color(), font=font)
             draw.text((center + 0.5*i, center - 0.5*i), self.text, get_random_color(), font=font)
             draw.text((center + 1*i, center - 1*i), self.text, get_random_color(), font=font)
@@ -222,7 +222,7 @@ class Gif:
                     size = random.randint(1, 5)
                     icon = icon.resize((size, size), Image.ANTIALIAS)
                     im.paste(icon, (x, y), mask=icon)
-
+            center = random.randint(0, 100)
             draw.text((center + 0.5*i, center + 0.5), self.text, get_random_color(), font=font)
             draw.text((center + 1, center + 1), self.text, get_random_color(), font=font)
 
@@ -247,6 +247,7 @@ class Gif:
                     icon = icon.resize((size, size), Image.ANTIALIAS)
                     im.paste(icon, (x, y), mask=icon)
 
+            center = random.randint(0, 100)
             draw.text((center - 0.5*i, center + 0.5*i), self.text, get_random_color(), font=font)
             draw.text((center - 1*i, center + 1*i), self.text, get_random_color(), font=font)
 
