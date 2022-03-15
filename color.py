@@ -113,7 +113,7 @@ class Gif:
 
     def method1(self):
         images = []
-        font = ImageFont.truetype('OpenSans-Light.ttf', size=24)
+        font = ImageFont.truetype('OpenSans-Light.ttf', size=16)
         center = self.width // 2
         color_1 = get_random_color()
         color_2 = get_random_color()
@@ -153,7 +153,7 @@ class Gif:
     def method2(self):
         images = []
 
-        font = ImageFont.truetype(get_random_font(self.text), size=32)
+        font = ImageFont.truetype(get_random_font(self.text), size=16)
         center = self.width // 2
 
         for i in range(0, 5):
