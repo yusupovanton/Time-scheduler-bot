@@ -1,11 +1,6 @@
-import os
-import shutil
-from PIL import ImageFont
-from PIL import Image, ImageDraw, ImageFont
-import random
-from colour import color_scale, Color
-import numpy
-import re
+from handlers.imports import *
+
+
 red = Color("red")
 blue = Color("blue")
 color_list = list(red.range_to(blue, 5))
