@@ -11,7 +11,7 @@ def has_cyrillic(text):
 
 
 def choose_random_icon():
-    choice = random.choice(os.listdir(f'icons'))
+    choice = random.choice(os.listdir(f'../icons'))
     return f'icons/{choice}'
 
 

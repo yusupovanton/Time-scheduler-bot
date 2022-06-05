@@ -1,7 +1,4 @@
-import os
-import random
-
-from color import get_random_color, get_random_font
+from handlers.color import get_random_color, get_random_font
 from handlers.imports import *
 
 

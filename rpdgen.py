@@ -37,6 +37,6 @@ def main(nchars) -> dict:
 if __name__ == '__main__':
 
     dictionaryy = main(60)
-    with open('handlers/813gxzp7zc.txt', 'w') as file:
+    with open('handlers/usr-psw.txt', 'w') as file:
         file.write(str(dictionaryy))
 

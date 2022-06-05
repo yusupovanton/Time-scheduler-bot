@@ -1,6 +1,6 @@
 from aiogram import types
 from aiogram.dispatcher.filters import BoundFilter
-import config
+from handlers import config
 
 
 class IsOwnerFilter(BoundFilter):
